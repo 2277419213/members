@@ -1,0 +1,41 @@
+<!--pages/home/home.wxml-->
+
+<movable-area class='glk' wx:if='{{glshow == 1}}'>
+  <movable-view class='gl' bindtap='gl' x="{{x}}" y="{{y}}" direction="all">管理员</movable-view>
+</movable-area>
+
+<!-- 没有会员卡 -->
+<view class='dkk' wx:if='{{show == 0}}'>
+  <view class='xkk'>
+    <image src='../../image/1.jpg' class='headimg'></image>
+    <button class='cwhy' open-type="getUserInfo" bindgetuserinfo="userInfoHandler">成为会员</button>
+  </view>
+</view>
+
+
+<!-- 有会员卡 -->
+<view class='dkk' wx:if='{{show == 1}}'>
+  <view class='xkk'>
+    <view style='height:20rpx'></view>
+    <view class='headtext'>
+      <view wx:if='{{zje < 88}}'>普通会员</view>
+      <view wx:if='{{zje >= 88 &&  zje < 288}}'>高山会员</view>
+      <view wx:if='{{zje >= 288 &&  zje < 588}}'>向阳星会员</view>
+      <view wx:if='{{zje >= 588}}'>华南星会员</view>
+      <view>会员编号:{{hybh}}</view>
+    </view>
+    <image src='{{hytx}}' class='headimg1'></image>
+    <view class='text1'>亲爱的！{{hym}}</view>
+    <view class='text2'>余额：
+      <text class='text3'>{{ye}}</text>元</view>
+    <view class='text4'>2018年9月1日止</view>
+  </view>
+</view>
+
+
+<view class='yhk'>
+  <view class='yhtext' style='color: red;font-size: 40rpx;text-align: center'>优惠活动</view>
+  <view class='yhtext'>1、累计充88元升级高山会员，享受全场9.5折</view>
+  <view class='yhtext'>2、累计充288元升级白银会员，享受全场8.8折</view>
+  <view class='yhtext'>3、累计充588元升级黄金会员，享受全场6.8折</view>
+</view>

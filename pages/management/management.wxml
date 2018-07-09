@@ -1,0 +1,11 @@
+<!--pages/management/management.wxml-->
+<view class='title'>收银台</view>
+<view class='dkk'>
+<input class='ipt' type='number' bindblur="srbh" value='{{hybh}}' placeholder='请输入会员编号'></input>
+<input class='ipt' type='number' bindblur="srje" value='{{je}}' placeholder='请输入金额'></input>
+<view class='sfcz'>
+<view>是否充值</view>
+<switch bindchange="switch1Change"/>
+</view>
+<button class='but' bindtap='tj'>提交</button>
+</view>

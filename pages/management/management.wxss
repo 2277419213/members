@@ -1,0 +1,51 @@
+/* pages/management/management.wxss */
+.dkk{
+  width: 90%;
+  height: 600rpx;
+  margin-left: 5%;
+  border: solid 1rpx #bcbcbc;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 0rpx 30rpx rgba(0, 0, 0, 0.3)
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx
+}
+
+.ipt{
+  width: 500rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -250rpx;
+  text-align: center;
+  border: solid 1rpx #bcbcbc;
+  height: 80rpx;
+  margin-top: 50rpx;
+  border-radius: 50rpx
+}
+
+.but{
+  width: 500rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -250rpx;
+  margin-top: 50rpx;
+  border: solid 1rpx #000;
+  background-color: #8cd790;
+  border-radius: 50rpx
+}
+
+.sfcz{
+  width: 500rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -250rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 50rpx
+}
